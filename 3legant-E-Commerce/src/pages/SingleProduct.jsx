@@ -9,7 +9,7 @@ const SingleProduct = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   useEffect(() => {
-    fetch(`https://threelegant.onrender.com/products/${id}`)
+    fetch(`https://3legant-ten.vercel.app/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
       console.log(product);
