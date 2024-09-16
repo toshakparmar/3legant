@@ -18,12 +18,12 @@ const SingleProduct = () => {
     <div className="single  flex flex-col gap-2">
       <div className="header mx-48 flex items-center py-4 gap-4 max-sm:mx-4 max-md:mx-10 max-lg:mx-14 max-xl:mx-16 max-2xl:mx-[120px]">
         <div className="text-[#605F5F] font-int text-sm font-medium flex items-center gap-1">
-          <Link to="/3legant-E-Commerce">Home</Link>
-          <img src="/3legant-E-Commerce/src/assets/resources/chevron-right.png" alt="" />
+          <Link to="/3legant-e-commerce">Home</Link>
+          <img src="/3legant-e-commerce/src/assets/resources/chevron-right.png" alt="" />
         </div>
         <div className="text-[#605F5F] font-int text-sm font-medium flex items-center gap-1">
-          <Link to="/3legant-E-Commerce/src/pages/shop">Shop</Link>
-          <img src="/3legant-E-Commerce/src/assets/resources/chevron-right.png" alt="" />
+          <Link to="/3legant-e-commerce/src/pages/shop">Shop</Link>
+          <img src="/3legant-e-commerce/src/assets/resources/chevron-right.png" alt="" />
         </div>
         <div className="text-[#121212] font-int text-sm font-medium flex items-center gap-1">
           Product
@@ -39,16 +39,16 @@ const SingleProduct = () => {
           rating={3}
           newTag
           images={[
-            "/3legant-E-Commerce/src/assets/resources/chair.png",
-            "/3legant-E-Commerce/src/assets/resources/under1.jpg",
-            "/3legant-E-Commerce/src/assets/resources/under2.jpg",
-            "/3legant-E-Commerce/src/assets/resources/under3.jpg",
+            "/3legant-e-commerce/src/assets/resources/chair.png",
+            "/3legant-e-commerce/src/assets/resources/under1.jpg",
+            "/3legant-e-commerce/src/assets/resources/under2.jpg",
+            "/3legant-e-commerce/src/assets/resources/under3.jpg",
           ]}
           productCode={1240}
           imagesColors={{
-            Black: "/3legant-E-Commerce/src/assets/resources/chair1.jpg",
-            Beige: "/3legant-E-Commerce/src/assets/resources/chair2.jpg",
-            Red: "/3legant-E-Commerce/src/assets/resources/chair3.jpg",
+            Black: "/3legant-e-commerce/src/assets/resources/chair1.jpg",
+            Beige: "/3legant-e-commerce/src/assets/resources/chair2.jpg",
+            Red: "/3legant-e-commerce/src/assets/resources/chair3.jpg",
           }}
           description="Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with a removable tray top, handy for serving snacks."
           category="Living Room"
@@ -63,8 +63,8 @@ const SingleProduct = () => {
             <div className="more ">
               <div className="2text text-black inline-flex font-int font-medium text-base border-b border-black ">
                 <div className="content flex items-center text-base">
-                  <Link to="/3legant-E-Commerce/shop">More Products</Link>
-                  <img src="/3legant-E-Commerce/src/assets/resources/arrow-right1.png" alt="" />
+                  <Link to="/3legant-e-commerce/shop">More Products</Link>
+                  <img src="/3legant-e-commerce/src/assets/resources/arrow-right1.png" alt="" />
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ const SingleProduct = () => {
                 <MiniCard
                   id={1}
                   product="Living Room"
-                  image="/3legant-E-Commerce/src/assets/resources/sofa.png"
+                  image="/3legant-e-commerce/src/assets/resources/sofa.png"
                   price={1200}
                   oldPrice={1700}
                   newTag
@@ -92,7 +92,7 @@ const SingleProduct = () => {
                 <MiniCard
                   id={1}
                   product="Living Room"
-                  image="/3legant-E-Commerce/src/assets/resources/lamo.png"
+                  image="/3legant-e-commerce/src/assets/resources/lamo.png"
                   price={1200}
                   oldPrice={1700}
                 />
