@@ -29,7 +29,7 @@ const Nav = ({loggedInUser}) => {
 		localStorage.removeItem("token");
 		handleSuccess("User Logged Out");
 		setTimeout(() => {
-			navigate("/3legant-e-commerce/sign-in");
+			navigate("/sign-in");
 		}, 1000);
 	};
 
@@ -78,21 +78,21 @@ const Nav = ({loggedInUser}) => {
 						/>
 					</div>
 
-					<NavLink to="/3legant-e-commerce/home" className="py-4 border-b border-bright-gray" activeClassName="active">
+					<NavLink to="/home" className="py-4 border-b border-bright-gray" activeClassName="active">
 						Home
 					</NavLink>
 
-					<NavLink to="/3legant-e-commerce/shop" className="py-4 border-b border-bright-gray" 
+					<NavLink to="/shop" className="py-4 border-b border-bright-gray" 
 					activeClassName="active">
 						Shop
 					</NavLink>
 
-					<NavLink to="/3legant-e-commerce/product" className="py-4 border-b border-bright-gray"
+					<NavLink to="/product" className="py-4 border-b border-bright-gray"
 					activeClassName="active">
 						Product
 					</NavLink>
 
-					<NavLink to="/3legant-e-commerce/contact" className="py-4 border-b border-bright-gray"
+					<NavLink to="/contact" className="py-4 border-b border-bright-gray"
 					activeClassName="active">
 						Contact Us
 					</NavLink>
@@ -120,7 +120,7 @@ const Nav = ({loggedInUser}) => {
 					</div>
 
 					<NavLink
-						to="/3legant-e-commerce/sign-in"
+						to="/sign-in"
 						className="w-full h-12 mt-8 mb-10 flex justify-center items-center rounded-lg bg-primary text-white font-inter font-base font-semibold"
 					>
 						Sign In
@@ -138,22 +138,22 @@ const Nav = ({loggedInUser}) => {
 				</div>
 
 				<div className="text-nickel font-space-grotesk text-sm font-medium hidden md:block">
-					<NavLink to="/3legant-e-commerce/home" className="mr-10"
+					<NavLink to="/home" className="mr-10"
 					activeClassName="active">
 						Home
 					</NavLink>
 
-					<NavLink to="/3legant-e-commerce/shop" className="mr-10"
+					<NavLink to="/shop" className="mr-10"
 					activeClassName="active">
 						Shop
 					</NavLink>
 
-					<NavLink to="/3legant-e-commerce/product" className="mr-10"
+					<NavLink to="/product" className="mr-10"
 					activeClassName="active">
 						Product
 					</NavLink>
 
-					<NavLink to="/3legant-e-commerce/contact"
+					<NavLink to="/contact"
 					activeClassName="active">Contact Us</NavLink>
 				</div>
 
@@ -172,7 +172,7 @@ const Nav = ({loggedInUser}) => {
 							<img src={logout} alt="Logout User" className="mr-4 hidden md:block cursor-pointer w-7 h-7 font-semibold" onClick={handleSignOut}/>
 						</div>
 					: 
-					<NavLink to="/3legant-e-commerce/sign-in"
+					<NavLink to="/sign-in"
 					activeClassName="active">
 						<img src={login} alt="Login User" className="w-6 h-6 mr-4 hidden md:block" />
 					</NavLink>
