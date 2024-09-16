@@ -33,7 +33,7 @@ const SignUp = () => {
 			handleError("Please provide all the information");
 		}
 		try{
-			const url = "https://threelegant.onrender.com/auth/register";
+			const url = "https://3legant-ten.vercel.app/auth/register";
 			const response = await fetch(url, {
 				method: "POST",
 				headers: {
