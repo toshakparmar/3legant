@@ -210,7 +210,7 @@ const Shop = () => {
               {products?.map((product) => (  
                 <MiniCard
                   product={product.name}
-                  image={`/3legant-e-commerce/${product.image}`}
+                  image={${product.image}}
                   price={product.price}
                   id={product._id}
                   oldPrice={product.price * 1.5}
