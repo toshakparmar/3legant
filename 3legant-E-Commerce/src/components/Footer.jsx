@@ -15,19 +15,19 @@ const Footer = () => {
 					</div>
 
 					<div className="flex flex-col mt-10 text-center md:flex-row">
-						<Link to="/3legant-E-Commerce/home" className="mb-8 md:mr-10">
+						<Link to="/3legant-e-commerce/home" className="mb-8 md:mr-10">
 							Home
 						</Link>
-						<Link to="/3legant-E-Commerce/shop" className="mb-8 md:mr-10">
+						<Link to="/3legant-e-commerce/shop" className="mb-8 md:mr-10">
 							Shop
 						</Link>
-						<Link to="/3legant-E-Commerce/product" className="mb-8 md:mr-10">
+						<Link to="/3legant-e-commerce/product" className="mb-8 md:mr-10">
 							Product
 						</Link>
-						<Link to="/3legant-E-Commerce/shop"className="mb-8 md:mr-10">
+						<Link to="/3legant-e-commerce/shop"className="mb-8 md:mr-10">
 							Blog
 						</Link>
-						<Link to="/3legant-E-Commerce/contact"className="mb-10">
+						<Link to="/3legant-e-commerce/contact"className="mb-10">
 							Contact Us
 						</Link>
 					</div>
