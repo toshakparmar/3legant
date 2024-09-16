@@ -9,7 +9,7 @@ const SingleProduct = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:8000/products/${id}`)
+    fetch(`https://threelegant.onrender.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
       console.log(product);
