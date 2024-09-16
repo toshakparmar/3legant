@@ -47,7 +47,7 @@ const SignIn = () => {
 				localStorage.setItem("token", token);
 				localStorage.setItem("loggedInUser", name);
 				setTimeout(() => {
-					navigate('/3legant-E-Commerce/home');
+					navigate('/3legant-e-commerce/home');
 				}, 1000);
 			}else if(error){
 				handleError(error);
