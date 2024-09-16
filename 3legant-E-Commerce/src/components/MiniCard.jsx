@@ -47,7 +47,7 @@ const MiniCard = ({
         className="bg p-4 inline-flex flex-col justify-between transition-all duration-300 ease-in-out w-64 h-80 max-sm:w-44 max-sm:h-52 max-lg:w-60 max-lg:h-80"
         style={cardStyle}
       >
-        <Link to={`/3legant-e-commerce/product/${id}`} className="h-full">
+        <Link to={`/product/${id}`} className="h-full">
           <div className="header-card flex justify-between ">
             <div className="left-header flex-col">
               {newTag !== 0 && (
