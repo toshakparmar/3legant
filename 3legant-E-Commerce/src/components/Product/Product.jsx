@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import Quantity from "../Quantity";
 import { addToCart } from "../../features/cartSlice";
-import "@splidejs/react-splide/css"
+import "@splidejs/react-splide/css";
+import "./Product.css";
 
 const Product = ({
   id,
