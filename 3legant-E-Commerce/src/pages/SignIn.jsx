@@ -47,7 +47,7 @@ const SignIn = () => {
 				localStorage.setItem("token", token);
 				localStorage.setItem("loggedInUser", name);
 				setTimeout(() => {
-					navigate('/3legant-e-commerce/home');
+					navigate('/home');
 				}, 1000);
 			}else if(error){
 				handleError(error);
@@ -126,7 +126,7 @@ const SignIn = () => {
 						</div>
 
 						<Link
-							to="/3legant-e-commerce/"
+							to="/"
 							className="w-full h-12 mt-8 mb-10 flex justify-center items-center rounded-lg bg-primary text-white font-inter font-base font-semibold"
 							onClick={handleSignIn}
 						>
