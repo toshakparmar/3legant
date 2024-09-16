@@ -10,24 +10,24 @@ import store from "./Store";
 
 const router = createBrowserRouter([
 	{
-		path: "/3legant-E-Commerce",
-		element: <Navigate to="/3legant-E-Commerce/sign-in" />
+		path: "/3legant-e-commerce",
+		element: <Navigate to="/3legant-e-commerce/sign-in" />
 	},
 	{
-		path: "/3legant-E-Commerce/home",
+		path: "/3legant-e-commerce/home",
 		element:  <Home />,
 		errorElement: <Error />,
 	},
 	{
-		path: "/3legant-E-Commerce/sign-up",
+		path: "/3legant-e-commerce/sign-up",
 		element: <SignUp />,
 	},
 	{
-		path: "/3legant-E-Commerce/sign-in",
+		path: "/3legant-e-commerce/sign-in",
 		element: <SignIn />,
 	},
 	{
-		path: "/3legant-E-Commerce/product",
+		path: "/3legant-e-commerce/product",
 		element: (
 			<>
 				<NotificationBar />
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
 		),
 	},
 	{
-		path: "/3legant-E-Commerce/shop",
+		path: "/3legant-e-commerce/shop",
 		element: (
 			<>
 				<NotificationBar />
@@ -45,11 +45,11 @@ const router = createBrowserRouter([
 		),
 	},
 	{
-		path: "/3legant-E-Commerce/contact",
+		path: "/3legant-e-commerce/contact",
 		element: <Contact />,
 	},
 	{
-		path: "/3legant-E-Commerce/product/:id",
+		path: "/3legant-e-commerce/product/:id",
 		element: <SingleProduct />,
 	},
 ]);
