@@ -15,7 +15,7 @@ const HeroShop = ({ page, image, title, description }) => {
       >
         <div className="categories  flex items-center justify-center gap-4">
           <div className="text-[#605F5F] font-int text-sm font-medium flex items-center gap-1">
-            <Link to="/3legant-e-commerce/">Home</Link>
+            <Link to="/home">Home</Link>
             <img src="/src/assets/chevron-right.png" alt="" />
           </div>
           <div className="text-[#121212] font-int font-medium text-sm">
