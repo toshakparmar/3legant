@@ -31,7 +31,7 @@ const SignIn = () => {
 			handleError("Please provide all the information");
 		}
 		try{
-			const url = "http://localhost:8000/auth/login";
+			const url = "https://threelegant.onrender.com/auth/login";
 			const response = await fetch(url, {
 				method: "POST",
 				headers: {
