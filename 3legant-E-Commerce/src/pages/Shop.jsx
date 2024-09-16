@@ -97,9 +97,9 @@ const Shop = () => {
       const url = "https://3legant-ten.vercel.app/products";
       const response = await fetch(url, {
         method: "GET",
-				headers: {
-					"Content-Type": "application/json",
-          "Authorization": `${localStorage.getItem('token')}`
+		headers: {
+		"Content-Type": "application/json",
+          	"Authorization": `${localStorage.getItem('token')}`
 				}
       });
       if(response.status === 200){
@@ -210,7 +210,7 @@ const Shop = () => {
               {products?.map((product) => (  
                 <MiniCard
                   product={product.name}
-                  image={`/3legant-E-Commerce/${product.image}`}
+                  image={`/3legant-e-commerce/${product.image}`}
                   price={product.price}
                   id={product._id}
                   oldPrice={product.price * 1.5}
