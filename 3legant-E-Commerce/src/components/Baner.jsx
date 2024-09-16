@@ -22,7 +22,7 @@ const Baner = () => {
           </div>
           <div className="2text text-black inline-flex font-int font-medium text-base border-b border-black ">
             <div className="content flex items-center text-base font-medium">
-              <Link to="/shop">Shop Now</Link>
+              <Link to="3legant-e-commerce/shop">Shop Now</Link>
               <img src="src\assets\arrow-right1.png" alt="" />
             </div>
           </div>
