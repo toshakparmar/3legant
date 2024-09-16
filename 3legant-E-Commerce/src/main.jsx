@@ -6,7 +6,7 @@ import 'react-toastify/ReactToastify.css';
 import { Home, Product, Shop, SignIn, SignUp, Contact, Error, SingleProduct } from "./pages";
 import { NotificationBar } from "./components";
 import { Provider } from "react-redux";
-import store from "./store";
+import store from "./Store";
 
 const router = createBrowserRouter([
 	{
