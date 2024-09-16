@@ -82,7 +82,7 @@ const SignIn = () => {
 						<p className="text-nickel font-inter font-normal text-base">
 							Don’t have an accout yet?{" "}
 							<Link
-								to="/3legant-e-commerce/sign-up"
+								to="/sign-up"
 								className="text-green font-inter font-semibold text-base hover:underline"
 							>
 								Sign Up
