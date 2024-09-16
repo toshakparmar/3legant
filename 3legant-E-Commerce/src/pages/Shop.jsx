@@ -25,7 +25,7 @@ const Shop = () => {
     }, 1000)
   
     try{
-      const url = `http://localhost:8000/products?sortByDirection=${sortBy}`;
+      const url = `https://threelegant.onrender.com/products?sortByDirection=${sortBy}`;
       const response = fetch(url, {
         method: "GET",
         headers: {
@@ -49,7 +49,7 @@ const Shop = () => {
     }, 1000)
     
     try{
-      const url = `http://localhost:8000/products?sortByCategory=${sortByCategory}`;
+      const url = `https://threelegant.onrender.com/products?sortByCategory=${sortByCategory}`;
       const response = fetch(url, {
         method: "GET",
         headers: {
@@ -74,7 +74,7 @@ const Shop = () => {
     }, 1000)
 
     try{
-      const url = `http://localhost:8000/products?minPrice=${minPrice}&maxPrice=${maxPrice}`;
+      const url = `https://threelegant.onrender.com/products?minPrice=${minPrice}&maxPrice=${maxPrice}`;
       const response = fetch(url, {
         method: "GET",
         headers: {
@@ -94,7 +94,7 @@ const Shop = () => {
 
   const getProducts = async (req, res) => {
     try {
-      const url = "http://localhost:8000/products";
+      const url = "https://threelegant.onrender.com/products";
       const response = await fetch(url, {
         method: "GET",
 				headers: {
