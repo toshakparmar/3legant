@@ -22,7 +22,7 @@ const NotificationBar = () => {
 					</p>
 
 					<Link
-						to="/3legant-E-Commerce/shop"
+						to="/3legant-e-commerce/shop"
 						className="border-b border-Blue hidden sm:flex items-center"
 					>
 						<p className="font-inter font-medium text-Blue text-sm">Shop Now</p>
