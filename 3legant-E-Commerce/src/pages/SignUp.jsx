@@ -33,7 +33,7 @@ const SignUp = () => {
 			handleError("Please provide all the information");
 		}
 		try{
-			const url = "http://localhost:8000/auth/register";
+			const url = "https://threelegant.onrender.com/auth/register";
 			const response = await fetch(url, {
 				method: "POST",
 				headers: {
