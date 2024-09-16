@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="header-page flex items-center mt-4">
           <div className="right flex items-center gap-1">
             <div className="home font-int text-[#605F5F] text-sm font-medium">
-              <Link to="/3legant-E-Commerce/">Home</Link>
+              <Link to="/">Home</Link>
             </div>
             <div className="image ">
               <img src="src/assets/resources/chevron-right.png" alt="" />
