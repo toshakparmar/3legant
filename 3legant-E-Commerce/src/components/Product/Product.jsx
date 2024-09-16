@@ -39,8 +39,8 @@ const Product = ({
     const stars = [];
     for (let i = 0; i < 5; i++)
       if (i < rating)
-        stars.push(<img key={i} src="/3legant-E-Commerce/src/assets/resources/Star.png" alt="star" />);
-      else stars.push(<img key={i} src="/3legant-E-Commerce/src/assets/resources/unStar.png" alt="star" />);
+        stars.push(<img key={i} src="/3legant-e-commerce/src/assets/resources/Star.png" alt="star" />);
+      else stars.push(<img key={i} src="/3legant-e-commerce/src/assets/resources/unStar.png" alt="star" />);
 
     return stars;
   };
@@ -130,13 +130,13 @@ const Product = ({
               className="splide__arrow splide__arrow--prev"
               onClick={resetColor}
             >
-              <img src="/3legant-E-Commerce/src/assets/resources/arrow-left.svg" alt="Previous" />
+              <img src="/3legant-e-commerce/src/assets/resources/arrow-left.svg" alt="Previous" />
             </button>
             <button
               className="splide__arrow splide__arrow--next"
               onClick={resetColor}
             >
-              <img src="/3legant-E-Commerce/src/assets/resources/arrow-right.svg" alt="Next" />
+              <img src="/3legant-e-commerce/src/assets/resources/arrow-right.svg" alt="Next" />
             </button>
           </div>
         </Splide>
@@ -215,7 +215,7 @@ const Product = ({
           <div className="colors">
             <div className="choose text-[#6C7275] font-int text-base font-semibold flex items-center gap-1">
               Choose Color
-              <img src="/3legant-E-Commerce/src/assets/resources/chevron-right.png" alt="" />
+              <img src="/3legant-e-commerce/src/assets/resources/chevron-right.png" alt="" />
             </div>
             <div className="selected text-black font-int text-lg font-normal">
               {selectedColor}
@@ -268,9 +268,9 @@ const Product = ({
                   className="flex items-center justify-center gap-2  py-2 px-[10.4rem] w-full max-sm:w-[54vw] max-lg:px-[2.5rem] max-xl:px-[6.5rem]  max-2xl:px-[6rem] max-md:px-[20vw] "
                 >
                   {isHeart ? (
-                    <img src="/3legant-E-Commerce/src/assets/resources/HeartClick.png" alt="" />
+                    <img src="/3legant-e-commerce/src/assets/resources/HeartClick.png" alt="" />
                   ) : (
-                    <img src="/3legant-E-Commerce/src/assets/resources/Heart.svg" alt="" />
+                    <img src="/3legant-e-commerce/src/assets/resources/Heart.svg" alt="" />
                   )}
                   Wishlist
                 </button>
