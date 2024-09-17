@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {Star, UnStar} from "../assets/resources";
+import { Star, UnStar } from "../assets/resources";
 // import { useDispatch, useSelector } from "react-redux";
 // import { addToCart, removeFromCart } from "../../features/cartSlice";
 
@@ -16,7 +16,7 @@ const MiniCard = ({
   const [isHovered, setIsHovered] = useState(false);
   oldPrice > price ? (newTag = 1) : (newTag = 0);
   const cardStyle = {
-    backgroundImage: `url(https://3legant-ten.vercel.app/${image})`,
+    backgroundImage: `url('https://3legant-ten.vercel.app/${image}')`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",

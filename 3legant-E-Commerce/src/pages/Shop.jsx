@@ -5,6 +5,7 @@ import Option from "@mui/joy/Option";
 import { handleError } from '../utils.js';
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import { ToastContainer } from 'react-toastify';
+import { HeroImage } from '../assets/resources';
 
 
 const Shop = () => {

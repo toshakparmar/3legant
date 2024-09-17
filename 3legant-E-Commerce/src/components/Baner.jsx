@@ -5,7 +5,7 @@ const Baner = () => {
   return (
     <div className="baner flex items-center bg-[#F3F5F7] justify-center max-sm:flex-wrap max-md:flex-wrap">
       <div className="left ">
-        <img src="/assets/resources/banner.png" alt="" className="object-cover" />
+        <img src="/src/assets/resources/banner.png" alt="" className="object-cover" />
       </div>
       <div className="right py-10 max-lg:py-8">
         <div
@@ -23,7 +23,7 @@ const Baner = () => {
           <div className="2text text-black inline-flex font-int font-medium text-base border-b border-black ">
             <div className="content flex items-center text-base font-medium">
               <Link to="/shop">Shop Now</Link>
-              <img src="/assets/arrow-right1.png" alt="" />
+              <img src="/src/assets/arrow-right1.png" alt="" />
             </div>
           </div>
         </div>

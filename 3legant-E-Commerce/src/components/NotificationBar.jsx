@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Ticket, Arrow ,Close } from "../assets/resources";
+
 
 const NotificationBar = () => {
 	const [isVisible, setIsVisible] = useState(true);
@@ -12,7 +14,7 @@ const NotificationBar = () => {
 			{isVisible && (
 				<div className="sticky top-0 z-50 w-full h-10 flex justify-center items-center py-2 bg-cultured">
 					<img
-						src="/assets/resources/ticket-percent.png"
+						src={Ticket}
 						alt="ticket-percent"
 						className="w-4 h-4 mr-2 sm:w-6 sm:h-6 sm:mr-3"
 					/>
@@ -25,11 +27,11 @@ const NotificationBar = () => {
 						className="border-b border-Blue hidden sm:flex items-center"
 					>
 						<p className="font-inter font-medium text-Blue text-sm">Shop Now</p>
-						<img src="/assets/resources/arrow-right.png" alt="arrow right" className="ml-1" />
+						<img src={Arrow} alt="arrow right" className="ml-1" />
 					</Link>
 
 					<img
-						src="/assets/resources/close.png"
+						src={Close}
 						alt="close"
 						className="w-4 h-4 absolute right-0 mr-4 sm:w-5 sm:h-5 cursor-pointer"
 						onClick={handleClose}
