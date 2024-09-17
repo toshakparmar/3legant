@@ -26,7 +26,7 @@ const Contact = () => {
               <Link to="/">Home</Link>
             </div>
             <div className="image ">
-              <img src="src/assets/resources/chevron-right.png" alt="" />
+              <img src="/assets/resources/chevron-right.png" alt="" />
             </div>
           </div>
           <div className="textCon text-[#121212] font-int font-medium text-sm ml-4">
@@ -55,19 +55,19 @@ const Contact = () => {
           </div>
           <div className="cards my-10 flex items-center justify-center gap-6 flex-wrap">
             <CardContact
-              image="src/assets/resources/store.svg"
+              image="/assets/resources/store.svg"
               title="Address"
               subtitle="234 Hai Trieu, Ho Chi Minh City, 
 Viet Nam"
             />
             <CardContact
-              image="src/assets/resources/call2.svg"
+              image="/assets/resources/call2.svg"
               title="Contact Us"
               subtitle="+84 234 567 890
 "
             />
             <CardContact
-              image="src/assets/resources/mail.svg"
+              image="/assets/resources/mail.svg"
               title="Email"
               subtitle="hello@3legant.com
 "
@@ -77,9 +77,9 @@ Viet Nam"
         <div className="form pb-20 flex items-center justify-center gap-28 max-sm:gap-14 max-xl:flex-wrap ">
           <Form />
           <div className="div relative flex items-center justify-center">
-            <img src="src/assets/resources/harta.png" alt="" />
+            <img src="/assets/resources/harta.png" alt="" />
             <div className="div2 absolute flex items-center justify-center">
-              <img src="src/assets/resources/location.png" alt="" />
+              <img src="/assets/resources/location.png" alt="" />
             </div>
           </div>
         </div>
@@ -87,22 +87,22 @@ Viet Nam"
 
       <div className="macro-cards bg-[#F3F5F7] flex items-center justify-center gap-20 flex-wrap">
         <MacroCard
-          image="src/assets/resources/delivery.png"
+          image="/assets/resources/delivery.png"
           title="Free Shipping"
           description="Order above $200"
         />
         <MacroCard
-          image="src/assets/resources/money.svg"
+          image="/assets/resources/money.svg"
           title="Money-back"
           description="30 days guarantee"
         />
         <MacroCard
-          image="src/assets/resources/lock.svg"
+          image="/assets/resources/lock.svg"
           title="Secure Payments"
           description="Secured by Stripe"
         />
         <MacroCard
-          image="src/assets/resources/call.svg"
+          image="/assets/resources/call.svg"
           title="24/7 Support"
           description="Phone and Email support"
         />

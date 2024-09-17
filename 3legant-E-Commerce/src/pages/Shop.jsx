@@ -6,7 +6,6 @@ import { handleError } from '../utils.js';
 import KeyboardArrowDown from "@mui/icons-material/KeyboardArrowDown";
 import { ToastContainer } from 'react-toastify';
 
-import { HeroImage, Filter, Sofa } from "../assets/resources";
 
 const Shop = () => {
 
@@ -210,7 +209,7 @@ const Shop = () => {
               {products?.map((product) => (  
                 <MiniCard
                   product={product.name}
-                  image={${product.image}}
+                  image={product.image}
                   price={product.price}
                   id={product._id}
                   oldPrice={product.price * 1.5}

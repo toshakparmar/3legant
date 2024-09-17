@@ -47,7 +47,7 @@ const SignUp = () => {
 			if(success){
 				handleSuccess(message);
 				setTimeout(() => {
-					navigate('sign-in');
+					navigate('/sign-in');
 				}, 1000);
 			}else if(error){
 				handleError(error);
@@ -82,7 +82,7 @@ const SignUp = () => {
 						<p className="text-nickel font-inter font-normal text-base">
 							Already have an account?{" "}
 							<Link
-								to=/sign-in"
+								to="/sign-in"
 								className="text-green font-inter font-semibold text-base hover:underline"
 							>
 								Sign in
@@ -142,13 +142,12 @@ const SignUp = () => {
 								</span>
 							</label>
 						</div>
-						<Link
-							to="/"
+						<div
 							className="w-full h-12 mt-8 mb-10 flex justify-center items-center rounded-lg bg-primary text-white font-inter font-base font-semibold"
 							onClick={handleSingUp}
 						>
 							Sign Up
-						</Link>
+						</div>
 					</form>
 					<ToastContainer />
 				</div>
