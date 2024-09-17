@@ -16,7 +16,7 @@ const MiniCard = ({
   const [isHovered, setIsHovered] = useState(false);
   oldPrice > price ? (newTag = 1) : (newTag = 0);
   const cardStyle = {
-    backgroundImage: `url(${image})`,
+    backgroundImage: `url(https://3legant-ten.vercel.app/${image})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
