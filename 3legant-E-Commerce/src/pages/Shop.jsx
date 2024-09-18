@@ -92,18 +92,19 @@ const Shop = () => {
     }
   }
 
-  const getProducts = async (req, res) => {
+  useEffect(() => {
+		localStorage.getItem('loggedInUser') && setLoggedInUser(localStorage.getItem('loggedInUser'));
     try {
       const url = "https://3legant-ten.vercel.app/products";
-      const response = await fetch(url, {
+      const response = fetch(url, {
         method: "GET",
-		headers: {
-		"Content-Type": "application/json",
-          	"Authorization": `${localStorage.getItem('token')}`
+		    headers: {
+		        "Content-Type": "application/json",
+            "Authorization": `${localStorage.getItem('token')}`
 				}
       });
       if(response.status === 200){
-        const result = await response.json();
+        const result = response.json();
         const {products} = result;
         setProducts(products);
         res.status(200).json({products: products, success: true});
@@ -112,13 +113,8 @@ const Shop = () => {
       }
     }catch (error) {
       handleError(error);
-    }
-  }
-
-  useEffect(() => {
-		localStorage.getItem('loggedInUser') && setLoggedInUser(localStorage.getItem('loggedInUser'));
-    getProducts();    
-	},[products]);
+    }  
+	},[]);
 
   return (
     <>
