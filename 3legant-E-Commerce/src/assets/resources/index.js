@@ -14,7 +14,6 @@ import Under3 from "./under3.jpg";
 import Arrow from "./arrow-right.png";
 import Ticket from "./ticket-percent.svg";
 import Close from "./close.svg";
-import Line from "./line.png";
 
 
 
