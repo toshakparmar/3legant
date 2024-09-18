@@ -18,79 +18,79 @@ const Shop = () => {
   const [sortByPrice, setSortByPrice] = useState('');
   const [sortBy, setSortBy] = useState('');
 
-  const handleSortBy = (event) => {
-    setTimeout(() => {
-      setSortBy(event.target.value);
-      console.log(event.target.value);  
-    }, 1000)
+  // const handleSortBy = (event) => {
+  //   setTimeout(() => {
+  //     setSortBy(event.target.value);
+  //     console.log(event.target.value);  
+  //   }, 1000)
   
-    try{
-      const url = `https://3legant-ten.vercel.app/products?sortByDirection=${sortBy}`;
-      const response = fetch(url, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `${localStorage.getItem('token')}`
-        },
-      });
-      if(response.status === 200){
-        const result = response.json();
-        const {products} = result;
-        setProducts(products);
-      }
-    }catch(error){
-      handleError(error);
-    }
-  }
-  const handleSortByCategory = (event) => {
-    setTimeout(() => {
-      setSortByCategory(event.target.value);
-      console.log(event.target.value);  
-    }, 1000)
+  //   try{
+  //     const url = `https://3legant-ten.vercel.app/products?sortByDirection=${sortBy}`;
+  //     const response = fetch(url, {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         "Authorization": `${localStorage.getItem('token')}`
+  //       },
+  //     });
+  //     if(response.status === 200){
+  //       const result = response.json();
+  //       const {products} = result;
+  //       setProducts(products);
+  //     }
+  //   }catch(error){
+  //     handleError(error);
+  //   }
+  // }
+  // const handleSortByCategory = (event) => {
+  //   setTimeout(() => {
+  //     setSortByCategory(event.target.value);
+  //     console.log(event.target.value);  
+  //   }, 1000)
     
-    try{
-      const url = `https://3legant-ten.vercel.app/products?sortByCategory=${sortByCategory}`;
-      const response = fetch(url, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `${localStorage.getItem('token')}`
-        },
-      });
-      if(response.status === 200){
-        const result = response.json();
-        const {products} = result;
-        setProducts(products);
-      }
-    }catch(error){
-      handleError(error);
-    }
-  }
-  const handleSortByPrice = (event) => {
-    setTimeout(() => {
-      setSortByPrice(event.target.value);
-      console.log(event.target.value);
-      const {minPrice, maxPrice} = sortByPrice.split('-'); //minPrice   
-    }, 1000)
+  //   try{
+  //     const url = `https://3legant-ten.vercel.app/products?sortByCategory=${sortByCategory}`;
+  //     const response = fetch(url, {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         "Authorization": `${localStorage.getItem('token')}`
+  //       },
+  //     });
+  //     if(response.status === 200){
+  //       const result = response.json();
+  //       const {products} = result;
+  //       setProducts(products);
+  //     }
+  //   }catch(error){
+  //     handleError(error);
+  //   }
+  // }
+  // const handleSortByPrice = (event) => {
+  //   setTimeout(() => {
+  //     setSortByPrice(event.target.value);
+  //     console.log(event.target.value);
+  //     const {minPrice, maxPrice} = sortByPrice.split('-'); //minPrice   
+  //   }, 1000)
 
-    try{
-      const url = `https://3legant-ten.vercel.app/products?minPrice=${minPrice}&maxPrice=${maxPrice}`;
-      const response = fetch(url, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `${localStorage.getItem('token')}`
-        },
-      });
-      if(response.status === 200){
-        const result = response.json();
-        const {products} = result;
-        setProducts(products);
-      }
-    }catch(error){
-      handleError(error);
-    }
-  }
+  //   try{
+  //     const url = `https://3legant-ten.vercel.app/products?minPrice=${minPrice}&maxPrice=${maxPrice}`;
+  //     const response = fetch(url, {
+  //       method: "GET",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         "Authorization": `${localStorage.getItem('token')}`
+  //       },
+  //     });
+  //     if(response.status === 200){
+  //       const result = response.json();
+  //       const {products} = result;
+  //       setProducts(products);
+  //     }
+  //   }catch(error){
+  //     handleError(error);
+  //   }
+  // }
 
   useEffect(() => {
 		localStorage.getItem('loggedInUser') && setLoggedInUser(localStorage.getItem('loggedInUser'));
@@ -105,7 +105,9 @@ const Shop = () => {
       });
       if(response.status === 200){
         const result = response.json();
+        console.log(result);
         const {products} = result;
+        console.log(products);
         setProducts(products);
         res.status(200).json({products: products, success: true});
       }else if(response.status === 401){
